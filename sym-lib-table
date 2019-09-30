@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ciaa-z3r0)(type Legacy)(uri ${KIPRJMOD}/ciaa-z3mot.lib)(options "")(descr ""))
+  (lib (name ciaa-z3mot)(type Legacy)(uri ${KIPRJMOD}/ciaa-z3mot.lib)(options "")(descr ""))
+)

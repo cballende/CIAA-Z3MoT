@@ -194,12 +194,6 @@ Text Label 1050 1750 2    60   ~ 0
 PA0
 Text Label 1050 1650 2    60   ~ 0
 PA1
-Text Label 1050 1550 2    60   ~ 0
-PA2
-Text Label 1050 1450 2    60   ~ 0
-PC0
-Text Label 1050 1350 2    60   ~ 0
-PC1
 Text Label 1050 1250 2    60   ~ 0
 PC2
 Text Label 1050 1150 2    60   ~ 0
@@ -214,10 +208,6 @@ Text Label 850  4125 0    60   ~ 0
 PD4
 Text Label 850  3425 0    60   ~ 0
 PA8
-Text Label 850  3525 0    60   ~ 0
-PA9
-Text Label 850  3625 0    60   ~ 0
-PA10
 Text Label 850  3725 0    60   ~ 0
 nRESET
 Text Label 850  3825 0    60   ~ 0
@@ -449,10 +439,6 @@ F 3 "" H 4850 5600 50  0001 C CNN
 	1    4850 5600
 	-1   0    0    -1  
 $EndComp
-Text Label 8725 3450 1    60   ~ 0
-B_USB+
-Text Label 8725 3550 3    60   ~ 0
-B_USB-
 $Comp
 L ciaa-z3r0:+3.3V #PWR06
 U 1 1 59D15100
@@ -710,24 +696,6 @@ Wire Wire Line
 Text Label 3400 625  0    60   ~ 0
 vusb
 $Comp
-L ciaa-z3r0:GND #PWR05
-U 1 1 59D31AB4
-P 950 3125
-F 0 "#PWR05" H 950 2875 50  0001 C CNN
-F 1 "GND" V 955 2997 50  0000 R CNN
-F 2 "" H 950 3125 50  0001 C CNN
-F 3 "" H 950 3125 50  0001 C CNN
-	1    950  3125
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	950  3125 900  3125
-Wire Wire Line
-	850  3225 900  3225
-Wire Wire Line
-	900  3225 900  3125
-Connection ~ 900  3125
-$Comp
 L ciaa-z3r0:+3.3V #PWR08
 U 1 1 59D31ABE
 P 1025 3325
@@ -752,8 +720,6 @@ Wire Wire Line
 	7675 4750 7675 4800
 Wire Wire Line
 	3300 5875 3225 5875
-Wire Wire Line
-	900  3125 850  3125
 Wire Wire Line
 	1675 2825 2200 2825
 Wire Wire Line
@@ -1039,24 +1005,12 @@ F 3 "" H 5600 2000 60  0001 C CNN
 	1    5600 2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 3375 4400 0    60   Input ~ 0
+Text GLabel 3500 4800 0    60   Input ~ 0
 RXP
-Text GLabel 3425 4800 0    60   Input ~ 0
+Text GLabel 3700 5050 0    60   Input ~ 0
 TX_rf
-Wire Wire Line
-	3375 4400 3500 4400
-Wire Wire Line
-	3500 4400 3500 4225
-Wire Wire Line
-	3600 4600 3600 4225
-Text GLabel 3375 4600 0    60   Input ~ 0
+Text GLabel 3600 4925 0    60   Input ~ 0
 RXN
-Wire Wire Line
-	3425 4800 3700 4800
-Wire Wire Line
-	3700 4800 3700 4225
-Wire Wire Line
-	3375 4600 3600 4600
 Text GLabel 7250 2100 0    60   Input ~ 0
 TX_rf
 Text GLabel 7200 1350 0    60   Input ~ 0
@@ -1177,7 +1131,7 @@ U 1 1 5DCBB267
 P 10800 2100
 F 0 "J6" H 10900 2075 50  0000 L CNN
 F 1 "Conn_Coaxial" H 10900 1984 50  0000 L CNN
-F 2 "Connector_Coaxial:SMB_Jack_Vertical" H 10800 2100 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 10800 2100 50  0001 C CNN
 F 3 " ~" H 10800 2100 50  0001 C CNN
 	1    10800 2100
 	1    0    0    -1  
@@ -1551,8 +1505,6 @@ F 3 "~" V 2650 7235 50  0001 C CNN
 	1    2650 7175
 	1    0    0    -1  
 $EndComp
-Text Label 2700 6750 2    60   ~ 0
-Bat
 $Comp
 L Connector_Generic:Conn_01x03 J4
 U 1 1 5DDEF375
@@ -1725,11 +1677,11 @@ Wire Wire Line
 	9400 4300 9400 4600
 Text GLabel 5175 2625 2    60   Input ~ 0
 HFXTAL_N
-Text GLabel 2775 4600 0    60   Input ~ 0
+Text GLabel 2800 4375 0    60   Input ~ 0
 XIN
 Text GLabel 5175 2725 2    60   Input ~ 0
 HFXTAL_P
-Text GLabel 2800 4400 0    60   Input ~ 0
+Text GLabel 2875 4225 0    60   Input ~ 0
 XOUT
 Text GLabel 5175 3125 2    60   Input ~ 0
 LFXTAL_N
@@ -1742,13 +1694,11 @@ HFXTAL_P
 Text GLabel 8300 5725 0    60   Input ~ 0
 LFXTAL_N
 Wire Wire Line
-	2800 4400 3000 4400
+	2875 4225 3000 4225
 Wire Wire Line
-	3000 4400 3000 4225
+	2800 4375 3100 4375
 Wire Wire Line
-	2775 4600 3100 4600
-Wire Wire Line
-	3100 4600 3100 4225
+	3100 4375 3100 4225
 Wire Wire Line
 	4900 2525 5425 2525
 Wire Wire Line
@@ -2021,37 +1971,11 @@ Text Label 6650 4750 0    60   ~ 0
 SCL
 Text Label 6250 4450 0    60   ~ 0
 ENA
-$Comp
-L ciaa-z3mot:USB_PCB_PRINT U5
-U 1 1 5E157BAE
-P 9875 3175
-F 0 "U5" H 10453 2958 60  0000 L CNN
-F 1 "USB_PCB_PRINT" H 10453 2852 60  0000 L CNN
-F 2 "footprints:USB_PCB_FOOTPRINT" H 10125 3275 60  0001 C CNN
-F 3 "" H 10125 3275 60  0001 C CNN
-	1    9875 3175
-	1    0    0    -1  
-$EndComp
 Text Label 9675 3675 2    60   ~ 0
 vusb
-$Comp
-L ciaa-z3r0:GND #PWR056
-U 1 1 5E1EADF5
-P 9675 3225
-F 0 "#PWR056" H 9675 2975 50  0001 C CNN
-F 1 "GND" H 9680 3097 50  0000 R CNN
-F 2 "" H 9675 3225 50  0001 C CNN
-F 3 "" H 9675 3225 50  0001 C CNN
-	1    9675 3225
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9675 3525 8725 3525
 Wire Wire Line
 	8725 3525 8725 3550
 Connection ~ 8725 3550
-Wire Wire Line
-	9675 3375 8725 3375
 Wire Wire Line
 	8725 3375 8725 3450
 Connection ~ 8725 3450
@@ -2093,24 +2017,11 @@ Wire Wire Line
 	8375 4650 8550 4650
 Text Label 9125 4600 2    60   ~ 0
 On
-Text Label 2700 6650 2    60   ~ 0
-On
 Wire Wire Line
 	5375 6800 6100 6800
 Wire Wire Line
 	6100 6750 6100 6800
 Connection ~ 6100 6800
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5DC3D814
-P 2900 6650
-F 0 "J3" H 2980 6642 50  0000 L CNN
-F 1 "Conn_01x02" H 2980 6551 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2900 6650 50  0001 C CNN
-F 3 "~" H 2900 6650 50  0001 C CNN
-	1    2900 6650
-	1    0    0    -1  
-$EndComp
 Connection ~ 9200 4600
 Wire Wire Line
 	9125 4600 9200 4600
@@ -2173,14 +2084,6 @@ Wire Wire Line
 	700  5850 1650 5850
 Wire Wire Line
 	725  6925 1675 6925
-Text Label 2250 4100 2    60   ~ 0
-PA2
-Text Label 2250 4250 2    60   ~ 0
-PC0
-Text Label 3200 4225 3    60   ~ 0
-PA2
-Text Label 3300 4225 3    60   ~ 0
-PC0
 $Comp
 L ciaa-z3mot:EZM32HG320-48QFP U1
 U 1 1 5D902B88
@@ -2193,9 +2096,9 @@ F 3 "" H 3550 2875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4900 3325 0    60   ~ 0
-PA10
+GPIO01
 Text Label 4900 3425 0    60   ~ 0
-PA9
+GPIO00
 Text GLabel 6850 5750 0    60   Input ~ 0
 XIN
 Text GLabel 6925 5900 0    60   Input ~ 0
@@ -2229,4 +2132,131 @@ Wire Wire Line
 Connection ~ 10800 2525
 Wire Wire Line
 	10625 2525 10800 2525
+Wire Wire Line
+	3500 4225 3500 4800
+Text Label 850  3225 0    60   ~ 0
+On
+Text Label 850  3125 0    60   ~ 0
+Bat
+Text Label 3200 4225 3    60   ~ 0
+GPIO02
+Text Label 3300 4225 3    60   ~ 0
+GPIO03
+Text Label 1050 1550 2    60   ~ 0
+GPIO02
+Text Label 1050 1450 2    60   ~ 0
+GPIO03
+Text Label 850  3525 0    60   ~ 0
+GPIO0
+Text Label 850  3625 0    60   ~ 0
+GPIO01
+$Comp
+L ciaa-z3r0:GND #PWR0102
+U 1 1 5DA3AADC
+P 600 1350
+F 0 "#PWR0102" H 600 1100 50  0001 C CNN
+F 1 "GND" V 605 1222 50  0000 R CNN
+F 2 "" H 600 1350 50  0001 C CNN
+F 3 "" H 600 1350 50  0001 C CNN
+	1    600  1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1350 600  1350
+Text Label 2750 4700 2    60   ~ 0
+SDA
+Text Label 2750 4575 2    60   ~ 0
+SCL
+Text Label 5300 3425 0    60   ~ 0
+ENA
+Wire Wire Line
+	2750 4575 3200 4575
+Wire Wire Line
+	3200 4575 3200 4225
+Wire Wire Line
+	2750 4700 3300 4700
+Wire Wire Line
+	3300 4700 3300 4225
+Wire Wire Line
+	3700 4225 3700 5050
+Wire Wire Line
+	3600 4225 3600 4925
+Wire Wire Line
+	5300 3425 4900 3425
+$Comp
+L ciaa-z3r0:LED_ALT D4
+U 1 1 5DC43F19
+P 4100 7075
+F 0 "D4" H 4250 6975 50  0000 C CNN
+F 1 "ON" H 4100 6975 50  0000 C CNN
+F 2 "footprints:LED_0805" H 4100 7075 50  0001 C CNN
+F 3 "" H 4100 7075 50  0001 C CNN
+	1    4100 7075
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ciaa-z3r0:R_Small R12
+U 1 1 5DC43F1F
+P 4100 6800
+F 0 "R12" V 4200 6800 50  0000 C CNN
+F 1 "1K" V 4100 6800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4100 6800 50  0001 C CNN
+F 3 "" H 4100 6800 50  0001 C CNN
+	1    4100 6800
+	1    0    0    1   
+$EndComp
+$Comp
+L ciaa-z3r0:GND #PWR0103
+U 1 1 5DC43F25
+P 4100 7250
+F 0 "#PWR0103" H 4100 7000 50  0001 C CNN
+F 1 "GND" V 4105 7122 50  0000 R CNN
+F 2 "" H 4100 7250 50  0001 C CNN
+F 3 "" H 4100 7250 50  0001 C CNN
+	1    4100 7250
+	1    0    0    -1  
+$EndComp
+Text Label 4100 6700 1    60   ~ 0
+PA8
+Wire Wire Line
+	4100 6925 4100 6900
+Wire Wire Line
+	4100 7225 4100 7250
+$Comp
+L ciaa-z3r0:+3.3V #PWR0104
+U 1 1 5DC53C65
+P 4100 6700
+F 0 "#PWR0104" H 4100 6550 50  0001 C CNN
+F 1 "+3.3V" H 4125 6850 50  0000 C CNN
+F 2 "" H 4100 6700 50  0000 C CNN
+F 3 "" H 4100 6700 50  0000 C CNN
+	1    4100 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L ciaa-z3r0:GND #PWR056
+U 1 1 5E1EADF5
+P 9675 3225
+F 0 "#PWR056" H 9675 2975 50  0001 C CNN
+F 1 "GND" H 9680 3097 50  0000 R CNN
+F 2 "" H 9675 3225 50  0001 C CNN
+F 3 "" H 9675 3225 50  0001 C CNN
+	1    9675 3225
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9675 3375 8725 3375
+Wire Wire Line
+	9675 3525 8725 3525
+$Comp
+L ciaa-z3mot:USB_PCB_PRINT U5
+U 1 1 5E157BAE
+P 9875 3175
+F 0 "U5" H 10453 2958 60  0000 L CNN
+F 1 "USB_PCB_PRINT" H 10453 2852 60  0000 L CNN
+F 2 "footprints:USB_PCB_FOOTPRINT" H 10125 3275 60  0001 C CNN
+F 3 "" H 10125 3275 60  0001 C CNN
+	1    9875 3175
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

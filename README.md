@@ -1,13 +1,15 @@
-# CIAA-Z3R0
+# CIAA-Z3MoT
 
-EFM32 Happy gecko board for LQFP48 parts
+EZM32 Happy gecko board for QFP48 parts
 
 #### Schematic
 
-[Schematic in pdf](ciaa-z3r0.pdf)
+[Schematic in pdf](ciaa-z3mot.pdf)
 
-![board schematic](ciaa-z3r0.svg)
+![board schematic](ciaa-z3mot.svg)
 
 #### 3D view
 
-![boar dimage](CIAA-Z3R0.png)
+![boar dimage](CIAA-Z3mot-0,1-lat-1.jpg)
+![boar dimage](CIAA-Z3mot-0,1-lat.jpg)
+![boar dimage](CIAA-Z3mot-0,1-bot.jpg)

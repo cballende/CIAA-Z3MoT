@@ -1,4 +1,4 @@
-(module USB_PCB_FOOTPRINT (layer F.Cu) (tedit 5D8E83F9)
+(module USB_PCB_FOOTPRINT (layer F.Cu) (tedit 5D927454)
   (descr http://cnctech.us/pdfs/1001-011-01101.pdf)
   (tags USB-A)
   (attr smd)

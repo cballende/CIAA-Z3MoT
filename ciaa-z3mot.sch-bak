@@ -1605,7 +1605,7 @@ U 1 1 5E1F81AA
 P 6100 6975
 F 0 "C42" H 6008 6929 50  0000 R CNN
 F 1 "4.7u" H 6008 7020 50  0000 R CNN
-F 2 "footprints:C_0603" H 6100 6975 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6100 6975 50  0001 C CNN
 F 3 "" H 6100 6975 50  0001 C CNN
 	1    6100 6975
 	-1   0    0    1   
@@ -2271,4 +2271,24 @@ F 3 "" H 1150 3125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1150 3125
+$Comp
+L ciaa-z3r0:GND #PWR0104
+U 1 1 5D954E99
+P 775 1050
+F 0 "#PWR0104" H 775 800 50  0001 C CNN
+F 1 "GND" V 780 922 50  0000 R CNN
+F 2 "" H 775 1050 50  0001 C CNN
+F 3 "" H 775 1050 50  0001 C CNN
+	1    775  1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1050 950  1050
+Wire Wire Line
+	950  1050 950  1250
+Wire Wire Line
+	950  1250 1050 1250
+Wire Wire Line
+	775  1050 950  1050
+Connection ~ 950  1050
 $EndSCHEMATC

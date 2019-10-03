@@ -11,4 +11,4 @@ SLWSTK6244A 	169 	         + 20             	 EZR32HG330FG63G
 
 #### 3D view
 
-![boar dimage](ciaa-z3mot-2.png)
+![boar dimage](ciaa-z3mot-front.png)

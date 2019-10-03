@@ -13,3 +13,6 @@ SLWSTK6244A 	169 	         + 20             	 EZR32HG330FG63G
 
 ![boar dimage](ciaa-z3mot-front.png)
 ![boar dimage](ciaa-z3mot-lat.png)
+
+Vista con opciones de bateria y conector RF
+![boar dimage](ciaa-z3mot-perspec.png)

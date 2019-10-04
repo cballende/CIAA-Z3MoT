@@ -62,3 +62,5 @@ Los pines utilizados en Z3RO son los mismos que para Z3MoT. Se adiciona tira de 
 Vista con opciones de bateria y conector RF
 ![boar dimage](ciaa-z3mot-perspec.png)
 
+![boar dimage](hand-coin.jpeg)
+

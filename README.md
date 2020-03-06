@@ -53,13 +53,13 @@ Los pines utilizados en Z3RO son los mismos que para Z3MoT. Se adiciona tira de 
 
 #### 3D view
 
-![boar dimage](ciaa-z3mot-front.png)
-![boar dimage](ciaa-z3mot-lat.png)
+![boar dimage](docs/ciaa-z3mot-front.png)
+![boar dimage](docs/ciaa-z3mot-lat.png)
 
 ## Vista con opciones de bateria y conector RF
 
-![boar dimage](ciaa-z3mot-perspec.png)
+![boar dimage](docs/ciaa-z3mot-perspec.png)
 ## Video (YOUTUBE)
 [![Watch the video](https://j.gifs.com/mO8ljG.gif)](https://youtu.be/JIxqX9fWDKY "Video CIAA-Z3MoT")
 
-![boar dimage](hand-coin.jpeg)
+![boar dimage](docs/hand-coin.jpeg)

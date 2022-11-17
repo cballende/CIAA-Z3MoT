@@ -11,7 +11,7 @@ EZR32 Happy gecko board for QFP48 parts (EZR32HG)
 
 * Adaptación de [CIAA-Z3R0](http://www.proyecto-ciaa.com.ar/devwiki/doku.php?id=desarrollo:ciaa-z3r0) hacia un enfoque de [MoTe](https://en.wikipedia.org/wiki/Sensor_node).
 
-* Los pines entre Z3R0 y Z3MoT són compatibles en cierto grado, con excepción de los destinados a la interfase RF.
+* Los pines entre Z3R0 y Z3MoT són compatibles en cierto grado, con excepción de los destinados a la interface RF.
 
 * Puertos y pines deprecados de la versión Z3RO a la Z3MoT:
   - A:2,8,9,10. 
